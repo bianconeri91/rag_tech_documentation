@@ -15,6 +15,7 @@ notebooks/
 backlog.txt
 src/pipeline_v01.py
 src/pipeline_v02.py
+src/question_searcher_v01.py
 
 *.xlsx
 terminal.txt
