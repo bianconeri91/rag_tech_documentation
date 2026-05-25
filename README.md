@@ -161,9 +161,9 @@ Hybrid retrieval:
     - BM25
     - Semantic search
  ↓
-Result merging
+CrossEncoder reranking for Semantic Search
  ↓
-(Optional) reranking
+Result merging
  ↓
 Retrieved context
 ```
@@ -195,6 +195,19 @@ Evaluation dataset:
 - manually prepared engineering questions;
 - expected target fragments;
 - section constraints.
+
+---
+
+# Reranking
+
+The project includes an additional reranking stage using CrossEncoder models.
+
+Purpose:
+* improve ranking precision;
+* reorder semantically similar chunks;
+* increase relevance of top-ranked results.
+
+This stage is applied after hybrid retrieval and before final context selection.
 
 ---
 
